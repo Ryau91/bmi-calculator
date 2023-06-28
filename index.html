@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>BMI calculator</title>
+</head>
+<!-- use this https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T -->
+<body>
+    <button onclick="" class="change-background">click to change background</button>
+    <main>
+        <div class="description">
+            <h1>Body Mass Index Calculator</h1>
+            <p>Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
+        </div>
+
+        <div class="calculator">
+            <div class="heading">
+                <h2>Enter your details below</h2>
+            </div>
+            <div class="measurement-system-container">
+                <div class="metric-box">
+                    <input type="radio" id="metric" name="measurement-system" value="metric" checked>
+                    <label for="metric">Metric</label>
+                </div>
+                <div class="imperial-box">
+                    <input type="radio" id="imperial" name="measurement-system" value="imperial">
+                    <label for="imperial">Imperial</label>
+                </div>
+            </div>
+            <div class="hw-container">
+                <div class="height-container">
+                    <div class="title">
+                        Height
+                    </div>
+                    <input class="height-value" type="number" placeholder="0"><span class="height-unit">cm</span>
+                </div>
+                <div class="weight-container">
+                    <div class="title">
+                        Weight
+                    </div>
+                    <input class="weight-value" type="number" placeholder="0"><span class="weight-unit">kg</span>
+                </div>
+            </div>
+            <div class="calculate-button-container">
+                <button class="calculate-button">Calculate</button>
+            </div>
+            <div class="answer-box">
+                <h2>Your BMI is:</h2>
+                <div class="BMI-value">0</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

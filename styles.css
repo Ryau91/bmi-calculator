@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 2vw;   
+}
+
+p {
+    font-size: 1vw;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url(images/backgrounds/australia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.change-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+main {
+    height: 30vw;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(242,242,242);
+    border: 25px solid rgb(242,242,242);
+    border-radius: 50px;
+}
+
+.description {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(242,242,242)
+}
+
+.calculator {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(173, 216, 230);
+    border-radius: 30px;
+    padding: 1vw;
+    font-size: 1.25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    padding: 0.25vw 0;
+}
+
+.metric-box, .imperial-box {
+    display: flex;
+    align-items: center;
+}
+input[type="radio"] {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+label {
+    padding: 0.5vw;
+}
+
+.height-value, .weight-value {
+    width: 5vw;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 15px;
+    padding: 0.5vw;
+}
+
+.height-unit, .weight-unit {
+    padding: 0.5vw;
+}
+
+h2{
+    margin: 0;
+}
+
+.measurement-system-container, .hw-container {
+    width: 100%;
+    display: flex;
+}
+
+.metric-box, .imperial-box, .height-container, .weight-container{
+    flex-grow: 1;
+}
+
+.calculate-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 2rem 0; */
+}
+
+.calculate-button {
+    font-size: 1.25vw;
+    border-radius: 20px;
+    padding: 1vw;
+    border: none;
+    background-color: orange;
+}
+.answer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer-box > h2 {
+    /* padding: 0.5vw 0; */
+}
+
+.BMI-value {
+    background-color: #f2f2f2;
+    padding: 1vw;
+    font-size: 1.25vw;
+    border-radius: 15px;
+}
